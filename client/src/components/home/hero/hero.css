@@ -1,0 +1,241 @@
+.hero {
+  background-image: url("../../../../public/images/banner.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 90vh;
+  width: 100%;
+}
+.hero .container {
+  padding-top: 15%;
+}
+.hero h1 {
+  color: #fff;
+  font-size: 60px;
+  position:absolute;
+  left: 500px;
+  bottom: 400px;
+}
+.hero p {
+  color: #fff;
+  opacity: 0.8;
+}
+form {
+  background-color: #fff;
+  border-radius: 25px;
+  margin-top: 50px;
+  padding: 0 10px;
+}
+form input {
+  padding: 6px;
+  background-color: #b6acac59;
+  width: 50%;
+  border: 1px solid #27ae60;
+  margin-top: 5px;
+  border-radius: 15px;
+  font-size: 19px;
+}
+form span {
+  font-size: 14px;
+  color: grey;
+}
+input::placeholder {
+  font-size: 17px;
+  color: black;
+}
+
+.selectprop{
+  padding: 6px;
+  background-color: #b6acac59;
+  width: 120%;
+  border: 1px solid #27ae60;
+  margin-top: 5px;
+  border-radius: 15px;
+  font-size: 19px;
+}
+.selectcity{
+  padding: 6px;
+  background-color: #b6acac59;
+  width: 160%;
+  border: 1px solid #27ae60;
+  margin-top: 5px;
+  border-radius: 15px;
+  font-size: 19px;
+}
+.picker{
+  border: 1px solid #27ae60;
+  background-color: #b6acac59;
+  margin-top: 5px;
+  border-radius: 15px;
+  font-size: 19px;
+  color:black;
+  padding: 5px;
+  left: 10%;
+  bottom: -9px;
+}
+
+
+form .box {
+  padding: 15px;
+
+}
+form .box:nth-child(1) {
+  border-left: none;
+}
+form h4 {
+  font-weight: 500;
+}
+.optionCounter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  color: black;
+}
+
+.header {
+  background-color: #003580;
+  color: white;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.headerContainer {
+  width: 100%;
+  max-width: 1024px;
+  margin: 20px 0px 100px 0px;
+}
+
+.headerContainer.listMode {
+  margin: 20px 0px 0px 0px;
+}
+
+.headerList {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+.headerListItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.headerListItem.active {
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.headerDesc {
+  margin: 20px 0px;
+}
+
+.headerBtn {
+  background-color: #27ae60;
+  color: white;
+  width: 110px;
+  height: 40px;
+  border: none;
+  border-radius: 50px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.headerSearch {
+  height: 70px;
+  background-color: white;
+  border: 3px solid #27ae60;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px 0px;
+  border-radius: 50px;
+  position: absolute;
+  bottom: 175px;
+  left: 450px;
+  width: 100%;
+  max-width: 1024px;
+}
+
+.headerIcon {
+  color: lightgray;
+}
+
+.headerSearchItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.headerSearchInput {
+  border: none;
+  outline: none;
+}
+
+.headerSearchText {
+  color: lightgray;
+  cursor: pointer;
+}
+
+.date {
+  position: absolute;
+  top: 50px;
+  z-index: 2;
+}
+
+.options {
+  z-index: 2;
+  position: absolute;
+  top: 50px;
+  background-color: white;
+  color: gray;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+}
+
+.optionItem {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.optionCounter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  color: black;
+}
+
+.optionCounterButton {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #0071c2;
+  color: #0071c2;
+  cursor: pointer;
+  background-color: white;
+}
+
+.optionCounterButton:disabled {
+  cursor: not-allowed;
+}
+@media screen and (max-width: 800px) {
+  .hero .container {
+    padding-top: 30%;
+  }
+  form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  form .box {
+    border-left: none;
+  }
+  form input {
+    width: 100%;
+  }
+}
